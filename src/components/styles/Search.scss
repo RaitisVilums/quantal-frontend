@@ -1,0 +1,28 @@
+.search {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    background: transparent;
+    border: 1px solid var(--f-color-nav);
+    border-radius: 5px;
+    color: var(--f-color-nav);
+    padding: 2px 5px;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

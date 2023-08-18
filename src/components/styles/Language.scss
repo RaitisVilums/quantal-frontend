@@ -1,0 +1,23 @@
+.language {
+  color: var(--f-color--accent);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+
+  &__dropdown {
+    position: absolute;
+    top: 28px;
+    left: -5px;
+    background: var(--bg-backdrop);
+  }
+
+  &__dropdown-item {
+    cursor: pointer;
+    padding: 5px;
+  }
+}
+
+.hidden {
+  display: none;
+}

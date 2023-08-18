@@ -1,0 +1,96 @@
+.footer {
+  background: red;
+  &__information {
+    background: var(--bg-footer-light);
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+
+    & li {
+      padding: 5px;
+    }
+
+    & li a {
+      color: var(--f-color-footer);
+      padding: 5px;
+
+      &:hover {
+        color: var(--f-color-nav-acitve);
+      }
+    }
+  }
+
+  &__follow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & h2 {
+      text-transform: uppercase;
+      color: var(--f-color-nav-acitve);
+      font-weight: 400;
+    }
+  }
+
+  &__follow--icons {
+    display: flex;
+    align-items: center;
+    & a {
+      padding: 2px;
+
+      &:hover {
+        fill: var(--f-color-nav-acitve);
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      color: var(--f-color-nav-acitve);
+    }
+
+    & a {
+      color: var(--f-color-footer);
+
+      &:hover {
+        color: var(--f-color-nav-acitve);
+      }
+    }
+  }
+
+  &__credentials {
+    background: var(--bg-footer-dark);
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--f-color-nav-acitve);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__designers {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+span {
+  color: var(--f-color-footer-accent);
+
+  &:hover {
+    color: var(--f-color-nav-acitve);
+  }
+}
