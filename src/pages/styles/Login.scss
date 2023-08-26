@@ -4,4 +4,40 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-top: 50px;
+
+  &__btn {
+    margin-top: 10px;
+    width: 300px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid var(--f-color-nav);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: var(--fs-default);
+
+    &:hover {
+      background: var(--f-color-footer);
+      border: 1px solid var(--f-color-footer);
+      color: white;
+    }
+  }
+}
+
+.login__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login__cta--link {
+  color: var(--f-color-footer);
+  text-decoration: underline;
+
+  &:hover {
+    color: black;
+  }
 }

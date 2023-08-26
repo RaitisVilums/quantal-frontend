@@ -6,6 +6,7 @@ import instagram from "./instagram.svg";
 import youtube from "./youtube.svg";
 import search from "./search.svg";
 import arrow from "./arrow.svg";
+import { ReactComponent as CartIcon } from "./cart.svg";
 
 export {
   logo,
@@ -16,4 +17,5 @@ export {
   youtube,
   search,
   arrow,
+  CartIcon,
 };

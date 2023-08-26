@@ -1,0 +1,145 @@
+.cart {
+  display: flex;
+  position: relative;
+
+  &__quantity {
+    position: absolute;
+    color: var(--f-color-nav);
+    top: -4px;
+    right: -4px;
+    z-index: 1;
+    font-size: var(--fs-small);
+
+    &:hover {
+      color: var(--f-color-nav);
+    }
+  }
+
+  &__icon {
+    & path {
+      stroke: var(--f-color-nav);
+    }
+    &:hover path {
+      stroke: var(--f-color-nav-acitve);
+    }
+
+    &:hover + .cart__quantity {
+      color: var(--f-color-nav-acitve);
+    }
+  }
+
+  &__icon--white {
+    & path {
+      stroke: var(--f-color-nav-acitve);
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    width: 300px;
+    background: var(--bg-backdrop);
+    top: 35px;
+    right: 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  &__heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--f-color-nav);
+    & p {
+      font-size: 18px;
+      color: var(--f-color-nav-acitve);
+    }
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+    & div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__items {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--f-color-nav-acitve);
+    position: relative;
+
+    & img {
+      border: 1px solid var(--f-color-nav);
+    }
+
+    & span:hover {
+      color: var(--f-color-footer-accent);
+    }
+  }
+
+  &__item--content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 170px;
+  }
+  &__item--name {
+    font-size: var(--fs-default);
+    font-weight: 500;
+    max-height: 40px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  &__item--name::-webkit-scrollbar {
+    display: none;
+  }
+  &__item--price {
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item--remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    color: var(--f-color-footer-accent);
+    border: none;
+    cursor: pointer;
+    padding: 2px 3px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid var(--f-color-nav);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: var(--fs-default);
+    text-align: center;
+    &:hover {
+      background: var(--f-color-footer);
+      border: 1px solid var(--f-color-footer);
+      color: white;
+    }
+  }
+}

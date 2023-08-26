@@ -1,0 +1,18 @@
+.attribute {
+  &__group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    &:not(:first-child) {
+      border-top: 1px solid var(--bg-footer-dark);
+    }
+  }
+
+  &__name {
+    flex: 0 0 30%;
+    text-transform: uppercase;
+  }
+  &__value {
+    display: flex;
+  }
+}

@@ -21,12 +21,17 @@ const Home = () => {
                 <img
                   className="home__grid--item__img"
                   src={category.image}
-                  alt="category"
+                  alt={category.title}
                   width={288}
                   height={288}
                 />
               </Link>
-              <Link className="home__grid--item__link">{category.title}</Link>
+              <Link
+                to={`/products/${category.title}`}
+                className="home__grid--item__link"
+              >
+                {category.title}
+              </Link>
             </div>
           ))}
         </div>

@@ -4,7 +4,7 @@
   --fs-small: 10px;
   --fs-default: 15px;
   --fs-medium: 24px;
-  --fs-large: 28px;
+  --fs-large: 26px;
 
   --f-color-nav: #999;
   --f-color-nav-acitve: #fff;
@@ -15,6 +15,8 @@
   --bg-backdrop: rgba(0, 0, 0, 0.5);
   --bg-footer-light: #054160;
   --bg-footer-dark: #000;
+
+  --bg-categories-light: #eeeeee;
 }
 *,
 *::after,
@@ -81,6 +83,7 @@ ul {
   font-size: var(--fs-large);
   font-weight: 500;
   text-transform: uppercase;
+  color: var(--bg-footer-light);
 }
 
 .subheading {

@@ -1,0 +1,19 @@
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & input {
+    width: 300px;
+    padding: 5px 10px;
+    font-size: var(--fs-default);
+    outline: none;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid var(--f-color-nav);
+  }
+
+  & label {
+    cursor: pointer;
+  }
+}

@@ -10,7 +10,7 @@
 
   &__items {
     display: flex;
-    flex: 0 0 75%;
+    flex: 0 0 60%;
   }
 
   &__item {
@@ -28,5 +28,17 @@
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
+  }
+
+  &__btn {
+    border: none;
+    cursor: pointer;
+    font-size: var(--fs-default);
+    color: var(--f-color-nav);
+    background: transparent;
+    padding: 5px 10px;
+    &:hover {
+      color: var(--f-color-nav-acitve);
+    }
   }
 }
